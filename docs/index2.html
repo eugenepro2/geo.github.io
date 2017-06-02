@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+    <title>Гео</title>
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/tingle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;amp;subset=cyrillic" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.full&amp;lang=ru-Ru"></script>
+  </head>
+</html>
+<body>
+  <div id="menu" class="slideout-menu">
+    <div class="menu__logo flex fd center-sm center-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12"><img src="img/logo.png" alt=""><a onclick="modal.open()" class="order">Заказать звонок</a>
+            <p class="header__email">info@geo50rus.ru</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__list__item"><a href="index.html" class="menu__list__item__link">Главная</a></li>
+        <li class="menu__list__item"><a href="index2.html" class="menu__list__item__link">Геологические изыскания</a>
+          <ul class="menu__list__sub">
+            <li class="menu__list__sub__item"><a href="#" class="menu__list__sub__item__link">Цены</a></li>
+          </ul>
+        </li>
+        <li class="menu__list__item"><a href="index3.html" class="menu__list__item__link">Геодезические изыскания</a></li>
+        <li class="menu__list__item"><a href="article-inside.html" class="menu__list__item__link">Экология</a></li>
+        <li class="menu__list__item"><a href="price.html" class="menu__list__item__link">Цены</a></li>
+        <li class="menu__list__item"><a href="price.html" class="menu__list__item__link">Отзывы</a></li>
+        <li class="menu__list__item"><a href="article.html" class="menu__list__item__link">Статьи</a></li>
+        <li class="menu__list__item"><a href="contact.html" class="menu__list__item__link">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="panel">
+    <button class="toggle-menu">
+      <div class="icon-burger"></div>
+    </button>
+    <header class="header">
+      <div class="container">
+        <div class="row middle-md center-md middle-sm center-sm middle-xs center-xs">
+          <div class="col-md-2 col-sm-4 col-xs-12 start-md">
+            <div class="header__logo"><a href="/"><img src="img/logo.png" alt="Logo"></a></div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <p class="header__phone">8 (4872) 740-351</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-12 hidden-sm"><a onclick="modal.open()" class="order">Заказать звонок</a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 hidden-sm">
+            <p class="header__email">info@geo50rus.ru</p>
+          </div>
+          <div class="col-md-2 end-md col-sm-4 col-xs-12"><a onclick="city.open()" class="header__city">Россия, г.Тула </a></div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <div class="container">
+        <div class="row middle-md">
+          <div class="col-md-12">
+            <ul class="nav__list flex">
+              <li class="nav__list__item"><a href="index.html" class="nav__list__item__link">Главная</a></li>
+              <li class="nav__list__item"><a href="index2.html" class="nav__list__item__link">Геологические изыскания</a></li>
+              <li class="nav__list__item"><a href="index3.html" class="nav__list__item__link">Геодезические изыскания</a></li>
+              <li class="nav__list__item"><a href="article-inside.html" class="nav__list__item__link">Экология</a></li>
+              <li class="nav__list__item"><a href="price.html" class="nav__list__item__link">Цены</a></li>
+              <li class="nav__list__item"><a href="price.html" class="nav__list__item__link">Отзывы</a></li>
+              <li class="nav__list__item"><a href="article.html" class="nav__list__item__link">Статьи</a></li>
+              <li class="nav__list__item"><a href="contact.html" class="nav__list__item__link">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="row middle-md">
+          <div class="col-md-12"><span class="breadcrumb__text">Главная</span><span class="breadcrumb__text">Геодезические изыскания</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="content__inside">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading__block center-md">
+              <h1>Геодезические изыскания</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-6"><a href="#">
+              <div class="block-more"><img src="img/block-more.png" alt="" class="block-more__image"/>
+                <div class="block-more__green flex fd center-md middle-md center-sm middle-sm center-xs middle-xs">
+                  <p class="block-more__green__text">Инженерно-гидрометеорологичские исследования</p>
+                  <p class="block-more__green__text big">от 20 000 руб. за 1 км</p>
+                </div>
+              </div></a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6"><a href="#">
+              <div class="block-more"><img src="img/block-more.png" alt="" class="block-more__image"/>
+                <div class="block-more__green flex fd center-md middle-md center-sm middle-sm center-xs middle-xs">
+                  <p class="block-more__green__text">Топографическая съёмка</p>
+                  <p class="block-more__green__text big">от 13 000 руб</p>
+                </div>
+              </div></a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6"></div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <p>Выполнение геодезических работ в Москве входит в основную специализацию компании GEO50Регион. Без этих работ проектировщикам и строителям невозможно определиться с точным местом для пятна застройки, обеспечить безопасность при возведении и эксплуатации объекта, эффективно решить проблемы, связанные с взаимодействием природной среды с потенциальным объектом и уже эксплуатируемой застройкой.</p>
+          <div class="heading__block center-md">
+            <h3>Геодезические изыскания в Москве</h3>
+          </div>
+          <p>После согласования стоимости и подписания договора геодезисты зани-маются:</p>
+          <ol>
+            <li>Изучением материалов по геодезии прошлых лет;</li>
+            <li>Рекогносцировкой исследуемой местности или трассы;</li>
+            <li>Топографической съемкой и вынесением в натуру;</li>
+            <li>Составлением планов;</li>
+            <li>Камеральной проверкой и составлением технического отчета.</li>
+          </ol>
+          <section class="callback-button">
+            <div class="container">
+              <div class="row center-md center-sm center-xs">
+                <div class="col-md-12 col-sm-12 col-xs-12"><a class="callback-button__text">Оставить заявку или позвонить</a></div>
+              </div>
+            </div>
+          </section>
+          <section class="advantages advantages__inside">
+            <div class="row center-md center-sm center-xs">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="heading__block center-md center-sm center-xs">
+                  <h2 class="heading__white">Наши преимущества</h2>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <figure class="advantages__block">
+                  <div class="advantages__block__image"><span class="icon-flask"></span></div>
+                  <p class="advantages__block__text">Наличие <span class="advantages__block__red">собственной лаборатории</span> для проведения исследований</p>
+                </figure>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <figure class="advantages__block">
+                  <div class="advantages__block__image"><span class="icon-shovel"></span></div>
+                  <p class="advantages__block__text">Наличие <span class="advantages__block__red">собственного оборудования</span> для проведения изысканий</p>
+                </figure>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <figure class="advantages__block">
+                  <div class="advantages__block__image"><span class="icon-worker"></span></div>
+                  <p class="advantages__block__text">Специалисты приступают к работе в течении <span class="advantages__block__red">2х</span> дней с момента подписания договора</p>
+                </figure>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <figure class="advantages__block">
+                  <div class="advantages__block__image"><span class="icon-badge"></span></div>
+                  <p class="advantages__block__text"><span class="advantages__block__red">Более 1000 проектов</span>, прошедших экспертизу и введенных в эксплуатацию</p>
+                </figure>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <figure class="advantages__block">
+                  <div class="advantages__block__image"><span class="icon-mallet"></span></div>
+                  <p class="advantages__block__text">За всё время работы компании <span class="advantages__block__red">ни одного</span> судебного иска</p>
+                </figure>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <figure class="advantages__block">
+                  <div class="advantages__block__image"><span class="icon-guarantee"></span></div>
+                  <p class="advantages__block__text"><span class="advantages__block__red">8 полных лет</span> на рынке – таких компаний <span class="advantages__block__red">меньше 20%</span> на рынке</p>
+                </figure>
+              </div>
+            </div>
+          </section>
+          <p>Мы гарантируем высокую точность материалов по геодезии участка в Москве, в сочетании с оперативностью выполнения сложных исследований и оптимальной стоимостью работ.</p>
+          <p>Среди преимуществ нашей компании назовем профессиональную подготовку специалистов по инженерной геодезии в Москве, оснащенность современным оборудованием и приборами, проведение исследований в собственной лаборатории грунтов.</p>
+          <table class="table">
+            <tr>
+              <th>Вид изысканий</th>
+              <th>Объект (вид работ)</th>
+              <th>Стоимость</th>
+            </tr>
+            <tr>
+              <td rowspan="3" class="table__sort">Топографическая съемка</td>
+              <td>Участок менее 15 соток</td>
+              <td>12 000 руб.</td>
+            </tr>
+            <tr>
+              <td class="table__green">Участок до 25 соток</td>
+              <td class="table__green">16 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Сверка границ с кадастровым паспортом</td>
+              <td>8 000 руб.</td>
+            </tr>
+            <tr>
+              <td rowspan="3" class="table__sort">Геодезические изыскания</td>
+              <td class="table__green">Площадный объект</td>
+              <td class="table__green">от 10 000 руб./ га</td>
+            </tr>
+            <tr>
+              <td>Линейное сооружение</td>
+              <td>от 30 000 руб. / га</td>
+            </tr>
+            <tr>
+              <td class="table__green">Сопровождение строительства</td>
+              <td class="table__green">от 70 000 руб. / га</td>
+            </tr>
+            <tr>
+              <td rowspan="3" class="table__sort">Экологические изыскания</td>
+              <td>Одиночное здание,детский сад, школа</td>
+              <td>от 80 000 руб.</td>
+            </tr>
+            <tr>
+              <td class="table__green">Ангар до 1 га</td>
+              <td class="table__green">120 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Газовая трасса до 20 км</td>
+              <td>150 000 руб.</td>
+            </tr>
+          </table>
+          <p>Наша компания занимается изучением геодезии в строительстве в Москве как на предпроектной стадии, так и в процессе возведения объекта. Выполнение работ по геодезическому сопровождению в строительстве в Москве необходимо для мониторинга строящихся конструкций и проверки соответствия их проектным данным.</p>
+          <p>Мы оказываем услуги на основании технического задания заказчика, в полном соответствии с региональным законодательством и нормами строительных стандартов. Мы снабжаем заказчика исключительно проверенными данными, на основании которых можно без проблем получить разрешение на строительство.</p>
+          <section class="callback-button">
+            <div class="container">
+              <div class="row center-md center-sm center-xs">
+                <div class="col-md-12 col-sm-12 col-xs-12"><a class="callback-button__text">Оставить заявку или позвонить</a></div>
+              </div>
+            </div>
+          </section>
+          <section class="how-work how-work__inside">
+            <div class="container">
+              <div class="row center-md center-sm center-xs">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="heading__block center-md">
+                    <h2>Как мы работаем</h2>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <figure class="how-work__block">
+                    <div class="how-work__block__image"><span class="icon-speech"></span></div>
+                    <p class="how-work__block__text">Оставьте заявку или позвоните<br>нам<br><span class="how-work__block__red">8 (499) 409-89-38</p>
+                  </figure>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <figure class="how-work__block">
+                    <div class="how-work__block__image"><span class="icon-drawing"></span></div>
+                    <p class="how-work__block__text">Получите консультацию и согласуйте дату приезда бригады геологов</p>
+                  </figure>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <figure class="how-work__block">
+                    <div class="how-work__block__image"><span class="icon-icon"></span><span class="icon-contract"></span></div>
+                    <p class="how-work__block__text">Приём бригады на участке и подписание договора</p>
+                  </figure>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <figure class="how-work__block">
+                    <div class="how-work__block__image"><span class="icon-report"></span></div>
+                    <p class="how-work__block__text">Отчет и консультация уже<br>через <span class="how-work__block__red">7 дней</p>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <section class="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="heading__block center-md center-sm center-xs">
+              <h2>Галерея</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row center-sm center-xs gallery__row">
+          <div class="col-md-4 gallery__block"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-4 gallery__block"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-4 gallery__block"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-4 gallery__block"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-4 gallery__block"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-4 gallery__block"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-4 gallery__block"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-4 gallery__block"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-4 gallery__block"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-4 gallery__block gallery__none"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-4 gallery__block gallery__none"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-4 gallery__block gallery__none"><a href="img/gallery.png" class="gallery__link"><img src="img/gallery.png" alt="" class="gallery__image">
+              <div class="gallery__green"><i class="icon-zoom gallery__green__icon center-md middle-md center-sm middle-sm center-xs middle-xs flex"></i></div></a></div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="flex center-md center-sm center-xs"><a href="#" class="more more__gallery">Показать еще</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <p>Обращайтесь в компанию GEO50Регион, если вы решили заняться строительством дома на участке или вести хозяйственную деятельность. По всем вопросам, касающимся состава и стоимости геодезических изысканий в Москве, звоните по телефону <span class="red">8(499) 409-89-38.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="heading__block center-md center-sm center-xs">
+              <h2>Есть вопросы?</h2>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <form class="form">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                      <input type="text" placeholder="Ваше имя" class="form__name">
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                      <input type="tel" placeholder="Ваш телефон" class="form__phone">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 top-md">
+                  <textarea type="text" placeholder="Сообщение..." rows="2" class="form__massage"></textarea>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <input type="submit" value="Отправить" class="order__form">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 bottom-md">
+            <div class="row middle-sm">
+              <div class="col-md-12 col-sm-6 col-xs-12">
+                <div class="contact__phone">
+                  <div class="row">
+                    <div class="col-md-2"><span class="icon-phone"> </span></div>
+                    <div class="col-md-10"><span>8 (800) 505-89-60</span></div>
+                  </div>
+                </div>
+                <div class="contact__email">
+                  <div class="row">
+                    <div class="col-md-2"><span class="icon-email"> </span></div>
+                    <div class="col-md-10"><span>info@geo50rus.ru</span></div>
+                  </div>
+                </div>
+                <div class="contact__marker">
+                  <div class="row">
+                    <div class="col-md-2"><span class="icon-marker"> </span></div>
+                    <div class="col-md-10">
+                      <p class="contact__marker__small">Россия, Москва, ул. Щипок,<br> д. 16, строение 1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-6 col-xs-12">
+                <div class="contact__social flex"><a href="#" class="contact__social__youtube"><span class="icon-youtube"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span></a><a href="#" class="contact__social__twitter"><span class="icon-twitter"><span class="path1"></span><span class="path2"></span></span></a><a href="#" class="contact__social__instagram"><span class="icon-instagram"></span></a><a href="#" class="contact__social__google"><span class="icon-google-plus"></span></a></div>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row center-md center-sm center-xs">
+          <div class="col-md-4"><a href=""><img src="img/dev_logo.png" alt=""></a></div>
+        </div>
+      </div>
+    </footer>
+    <div style="display: none" class="call-back">
+      <form class="form">
+        <div class="heading__block center-md center-sm center-xs">
+          <h3>Заказать звонок</h3>
+        </div>
+        <div class="row center-md center-sm center-xs">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <input type="text" placeholder="Ваше имя" class="form__name">
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <input type="tel" placeholder="Ваш телефон" class="form__phone">
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <input type="submit" value="Отправить" class="order__form">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div style="display: none;" class="city">
+      <div class="header__city__block">
+        <ul>
+          <li><a href="#">Россия, г Тула</a></li>
+          <li><a href="#">Россия, г Тула</a></li>
+          <li><a href="#">Россия, г Тула</a></li>
+          <li><a href="#">Россия, г Тула</a></li>
+          <li><a href="#">Россия, г Тула</a></li>
+          <li><a href="#">Россия, г Тула</a></li>
+          <li><a href="#">Россия, г Тула</a></li>
+          <li><a href="#">Россия, г Тула</a></li>
+          <li><a href="#">Россия, г Тула</a></li>
+          <li><a href="#">Россия, г Тула</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/slideout.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/1.1.0/bootstrap-native.min.js" defer></script>
+    <script src="js/baguetteBox.min.js" defer></script>
+    <script src="js/tingle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </div>
+</body>
